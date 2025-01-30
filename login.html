@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AgriTech AI</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        body {
+            background: url('agri.jpg') no-repeat center center/cover;
+        }
+        .login-container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 260px; /* Reduced width */
+            margin: auto;
+            margin-top: 100px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .google-login {
+            background-color: #db4437;
+            color: white;
+        }
+        .google-login:hover {
+            background-color: #c1351d;
+        }
+        .forgot-signup {
+            margin-top: 10px;
+        }
+        .forgot-signup a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        input[type="text"], input[type="password"] {
+            width: 90%; /* Adjusted width */
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to AgriTech AI</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <button type="submit">Login</button>
+            <button type="button" class="google-login">Login with Google</button>
+
+            <p class="forgot-signup">
+                <a href="#">Forgot Password?</a> | <a href="signup.html">Sign Up</a>
+            </p>
+            <p class="error-message" id="errorMessage"></p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent page refresh
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+            
+            if (username === 'admin' && password === 'password123') {
+                alert('Login successful!');
+                window.location.href = 'home.html'; // Redirect to home
+            } else {
+                errorMessage.textContent = 'Invalid username or password!';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture AI Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- ☰ Menu Toggle Button (Now on the Left Side) -->
+            <label class="menu-toggle" for="menu-toggle">☰</label>
+            
+            <h2 class="logo">AgriTech AI</h2>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button>🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Pop-up Menu -->
+    <input type="checkbox" id="menu-toggle" style="display: none;">
+    <div class="menu-popup">
+        <div class="menu-content">
+            <h3>Menu</h3>
+            <!-- Updated Menu with Only 'About' and 'Login' -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <!-- Back Button -->
+            <button class="back-btn" onclick="window.history.back();">Go Back</button>
+        </div>
+    </div>
+
+    <!-- Main Home Section -->
+    <section id="home" class="home">
+        <div class="content">
+            <h1>Welcome to AgriTech AI</h1>
+            <p>Revolutionizing agriculture with Deep Learning & AI.</p>
+            <p>Empowering farmers with cutting-edge technology for precision farming.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Section at the Bottom -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At AgriTech AI, we are committed to transforming traditional farming practices using artificial intelligence. Our solutions aim to improve efficiency, reduce costs, and promote sustainability in agriculture.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AgriTech AI. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle the menu popup toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu-popup').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

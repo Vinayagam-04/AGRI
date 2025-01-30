@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Smart Agriculture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Navigation Section -->
+        <nav>
+            <h2 class="logo">AIML</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Services Section -->
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-boxes">
+                <!-- Service 1: Crop Disease Detection -->
+                <div class="service-box">
+                    <h3>Crop Disease Detection</h3>
+                    <p>Upload leaf images to detect fungal, bacterial, or viral infections.</p>
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <label for="leaf-image">Upload Leaf Image</label>
+                        <input type="file" id="leaf-image" name="leaf-image" accept="image/*" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Service 2: Weed Detection & Classification -->
+                <div class="service-box">
+                    <h3>Weed Detection & Classification</h3>
+                    <p>Upload farm images to identify and classify weeds.</p>
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <label for="weed-image">Upload Farm Image</label>
+                        <input type="file" id="weed-image" name="weed-image" accept="image/*" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+
+                <!-- Service 4: Fruit & Vegetable Ripeness Detection -->
+                <div class="service-box">
+                    <h3>Fruit & Vegetable Ripeness Detection</h3>
+                    <p>Upload fruit images to determine ripeness and harvesting time.</p>
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <label for="fruit-image">Upload Fruit Image</label>
+                        <input type="file" id="fruit-image" name="fruit-image" accept="image/*" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Service 5: Pest & Insect Identification -->
+                <div class="service-box">
+                    <h3>Pest & Insect Identification</h3>
+                    <p>Upload plant images to detect harmful pests and suggest solutions.</p>
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <label for="pest-image">Upload Plant Image</label>
+                        <input type="file" id="pest-image" name="pest-image" accept="image/*" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
